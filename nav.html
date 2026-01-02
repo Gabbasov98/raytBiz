@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог
+        </a>
+        <a href="catalog2.html" style="display: block; margin-bottom: 20px;">
+            Каталог 2
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара
+        </a>
+        <a href="search.html" style="display: block; margin-bottom: 20px;">
+            Результаты поиска
+        </a>
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            Корзина
+        </a>
+        <a href="order.html" style="display: block; margin-bottom: 20px;">
+            Оформление заказа
+        </a>
+        <a href="order-thank.html" style="display: block; margin-bottom: 20px;">
+            Оформление заказа (успешно)
+        </a>
+        <a href="profile.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет
+        </a>
+        <a href="profile-co.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет (юр.лицо)
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О компании РайтБиз
+        </a>
+
+
+
+
+        <button data-modal="reqModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заявка по товару
+        </button>
+        <button data-modal="successModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заявка успешно отправлена
+        </button>
+
+
+        <code>
+
+
+
+        </code>
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="reqModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="h2 h5-tablet">
+                Заявка по товару
+            </div>
+            <div class="modal__desc">
+                <div class="text18 l-sp1">
+                    Оставьте свои контактные данные и мы проконсультируем вас по данному товару
+                </div>
+            </div>
+
+            <form action="" class="modal-form">
+                <div class="modal-form__grid">
+                    <div class="fg _full">
+                        <label>Тема заявки</label>
+                        <input type="text">
+                    </div>
+                    <div class="fg _full">
+                        <label>ФИО</label>
+                        <input type="text">
+                    </div>
+                    <div class="fg">
+                        <label>Телефон</label>
+                        <input type="tel">
+                    </div>
+                    <div class="fg">
+                        <label>E-mail</label>
+                        <input type="text">
+                    </div>
+                    <div class="fg _full">
+                        <label>Сообщение</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="modal-form__bottom _flex">
+                    <button class="modal-form__btn m-btn m-btn-big m-btn-orange">
+                        <span>Отравить заявку</span>
+                        <img src="img/next3.svg" alt="">
+                    </button>
+                    <div class="modal-form__hint">
+                        Нажимая, я даю свое согласие на обработку  <a href="" class="trinidad-text">персональных данных</a> и согласен с условиями 
+                        <a href="" class="trinidad-text">политики конфиденциальности</a>
+                    </div>
+                </div>
+            </form>
+
+            <button class="close-btn _close-modal">
+                <img src="img/close2.png" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="modal success-modal" id="successModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="h5">
+                Заявка успешно отправлена
+            </div>
+            <div class="modal__desc">
+                <div class="text18 l-sp1">
+                    Ваше сообщение успешно отправлено. Наши специалисты свяжутся с вами в ближайшее время.
+                </div>
+            </div>
+            <button class="_close-modal success-modal__btn m-btn m-btn-big m-btn-gray-outline">
+                <span>Хорошо</span>
+            </button>
+
+            <button class="close-btn _close-modal">
+                <img src="img/close2.png" alt="">
+            </button>
+        </div>
+    </div>
+
+
+
+    <!--  -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

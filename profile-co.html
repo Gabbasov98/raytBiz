@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <title>Личный кабинет</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-mob">
+                    <a href="" class="header-mob__phone _flex">
+                        <img src="img/phone.svg" alt="">
+                        <span class="text12">+7 (812) 205-95-35</span>
+                    </a>
+                    <a href="" class="header-mob__lk _flex">
+                        <span class="text12">Личный кабинет</span>
+                        <img src="img/user2.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__inner">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+
+                    <div class="header-cart">
+                        <div class="h6">
+                            Добавлено:
+                        </div>
+                        <div class="header-cart__title">
+                            Фитинги из Поливинилхлорида
+                        </div>
+                        <div class="header-cart__type">
+                            1", 3 x 1/2
+                        </div>
+                        <div class="header-cart__price">
+                            490,0 ₽
+                        </div>
+                        <a href="" class="header-cart__link m-btn m-btn-orange">
+                            <span>Оформить заказ</span>
+                        </a>
+                    </div>
+
+                    <button data-modal="searchModal" class="header__search">
+                        <img src="img/search3.svg" alt="">
+                    </button>
+
+                    <div class="header-action2">
+                        <button class="header-action2__btn">
+                            <img src="img/cart4.svg" alt="">
+                        </button>
+                        <button class="header-action2__btn _toggle-menu">
+                            <img class="_small" src="img/burger3.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="menu">
+                        <div class="menu__top">
+                            <a href="" class="header__logo">
+                                <img src="img/logo.svg" alt="">
+                            </a>
+                            <button class="menu__close _toggle-menu">
+                                <img src="img/close.png" alt="">
+                            </button>
+                        </div>
+                        <div class="menu__scroll">
+                            <button class="catalog-btn _toggle-catalog">
+                                <span class="catalog-btn__icon">
+                        <img src="img/burger.svg" alt="" class="_view1">
+                        <img src="img/close2.png" alt="" class="_view2">
+                    </span>
+                                <span class="nav__link">Каталог</span>
+                            </button>
+                            <nav class="nav">
+                                <a href="" class="nav__link nav__link--hide-pc">Каталог</a>
+                                <a href="" class="nav__link">Решения</a>
+                                <a href="" class="nav__link">Услуги</a>
+                                <a href="" class="nav__link">Портфолио</a>
+                                <a href="" class="nav__link">Производство</a>
+                            </nav>
+                            <nav class="nav2">
+                                <a href="" class="nav2__link">О компании</a>
+                                <a href="" class="nav2__link">Новости</a>
+                                <a href="" class="nav2__link">Контакты</a>
+                            </nav>
+                            <div class="header-action">
+                                <a href="" class="header-action__item">
+                                    <img src="img/user.svg" alt="">
+                                    <span>Личный кабинет</span>
+                                </a>
+                                <a href="" class="header-action__item header-action__item--cart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM17 17H9.29395C8.83288 17 8.60193 17 8.41211 16.918C8.24466 16.8456 8.09938 16.7291 7.99354 16.5805C7.8749 16.414 7.82719 16.1913 7.73274 15.7505L5.27148 4.26465C5.17484 3.81363 5.12587 3.58838 5.00586 3.41992C4.90002 3.27135 4.75477 3.15441 4.58732 3.08205C4.39746 3 4.16779 3 3.70653 3H3M6 6H18.8732C19.595 6 19.9555 6 20.1978 6.15036C20.41 6.28206 20.5653 6.48862 20.633 6.729C20.7104 7.00343 20.611 7.34996 20.411 8.04346L19.0264 12.8435C18.9068 13.2581 18.8469 13.465 18.7256 13.6189C18.6185 13.7547 18.4772 13.861 18.317 13.9263C18.1361 14 17.9211 14 17.4921 14H7.73047M8 21C6.89543 21 6 20.1046 6 19C6 17.8954 6.89543 17 8 17C9.10457 17 10 17.8954 10 19C10 20.1046 9.10457 21 8 21Z" stroke="#074363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Корзина</span>
+                                </a>
+                                <a href="" class="header-action__item">
+                                    <img src="img/check3.svg" alt="">
+                                    <span>Мои Заказы</span>
+                                </a>
+                            </div>
+                            <div class="header-contacts">
+                                <div class="header-contacts__top">
+                                    <div class="header-contacts__time">Пн−Пт: 9:00−17:00</div>
+                                    <button class="header-contacts__call">Перезвоните мне</button>
+                                </div>
+                                <a href="" class="header-contacts__phone _flex">
+                                    <img src="img/phone.svg" alt="">
+                                    <span>+7 (812) 205-95-35</span>
+                                </a>
+                            </div>
+                            <div class="header-search">
+                                <div class="fg">
+                                    <label>Поиск по сайту</label>
+                                    <div class="header-search__field">
+                                        <input type="text">
+                                        <button class="header-search__btn">
+                                            <img src="img/search2.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-catalog">
+                <div class="container">
+                    <div class="header-catalog__inner">
+                        <div class="header-catalog__items">
+                            <div class="menu-item">
+                                <div class="menu-item__show">
+                                    <div class="menu-item__title">
+                                        Трубы и фитинги для отопления <br>и водоснабжения
+                                    </div>
+                                </div>
+                                <div class="menu-item__hidden">
+                                    <div class="menu-item__subtitle">
+                                        Трубы и фитинги для отопления <br>и водоснабжения
+                                    </div>
+                                    <ul class="menu-item__links">
+                                        <li><a href="">Обжимные фитинги для металопластиковых труб</a></li>
+                                        <li><a href="">Трубы из Сталей</a></li>
+                                        <li><a href="">Фитинги стальные приварные</a></li>
+                                        <li><a href="">Фитинги стальные резьбовые</a></li>
+                                        <li><a href="">Обжимные фитинги для стальных труб</a></li>
+                                        <li><a href="">Медные трубы</a></li>
+                                        <li><a href="">Пресс фитинги для медных труб</a></li>
+                                        <li><a href="">Обжимные фитинги для медных труб</a></li>
+                                        <li><a href="">Латунные фитинги</a></li>
+                                        <li><a href="">Трубы из Полиэтилена (ПЭ)</a></li>
+                                        <li><a href="">Фитинги из (ПЭ) — сегментные и электросварные</a></li>
+                                        <li><a href="">Трубы из Полипропилена (ПП)</a></li>
+                                        <li><a href="">Фитинги из полипропилена</a></li>
+                                        <li><a href="">Трубы из Поливинилхлорида (ПВХ)</a></li>
+                                        <li><a href="">Фитинги из Поливинилхлорида</a></li>
+                                        <li><a href="">Трубы из Металлопластика</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item__show">
+                                    <div class="menu-item__title">
+                                        Теплоизоляция
+                                    </div>
+                                </div>
+                                <div class="menu-item__hidden">
+                                    <div class="menu-item__subtitle">
+                                        Теплоизоляция
+                                    </div>
+                                    <ul class="menu-item__links">
+                                        <li><a href="">Обжимные фитинги для металопластиковых труб</a></li>
+                                        <li><a href="">Трубы из Сталей</a></li>
+                                        <li><a href="">Фитинги стальные приварные</a></li>
+                                        <li><a href="">Фитинги стальные резьбовые</a></li>
+                                        <li><a href="">Обжимные фитинги для стальных труб</a></li>
+                                        <li><a href="">Медные трубы</a></li>
+                                        <li><a href="">Пресс фитинги для медных труб</a></li>
+                                        <li><a href="">Обжимные фитинги для медных труб</a></li>
+                                        <li><a href="">Латунные фитинги</a></li>
+                                        <li><a href="">Трубы из Полиэтилена (ПЭ)</a></li>
+                                        <li><a href="">Фитинги из (ПЭ) — сегментные и электросварные</a></li>
+                                        <li><a href="">Трубы из Полипропилена (ПП)</a></li>
+                                        <li><a href="">Фитинги из полипропилена</a></li>
+                                        <li><a href="">Трубы из Поливинилхлорида (ПВХ)</a></li>
+                                        <li><a href="">Фитинги из Поливинилхлорида</a></li>
+                                        <li><a href="">Трубы из Металлопластика</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item__show">
+                                    <div class="menu-item__title">
+                                        Трубопроводная арматура
+                                    </div>
+                                </div>
+                                <div class="menu-item__hidden">
+                                    <div class="menu-item__subtitle">
+                                        Трубопроводная арматура
+                                    </div>
+                                    <ul class="menu-item__links">
+                                        <li><a href="">Обжимные фитинги для металопластиковых труб</a></li>
+                                        <li><a href="">Трубы из Сталей</a></li>
+                                        <li><a href="">Фитинги стальные приварные</a></li>
+                                        <li><a href="">Фитинги стальные резьбовые</a></li>
+                                        <li><a href="">Обжимные фитинги для стальных труб</a></li>
+                                        <li><a href="">Медные трубы</a></li>
+                                        <li><a href="">Пресс фитинги для медных труб</a></li>
+                                        <li><a href="">Обжимные фитинги для медных труб</a></li>
+                                        <li><a href="">Латунные фитинги</a></li>
+                                        <li><a href="">Трубы из Полиэтилена (ПЭ)</a></li>
+                                        <li><a href="">Фитинги из (ПЭ) — сегментные и электросварные</a></li>
+                                        <li><a href="">Трубы из Полипропилена (ПП)</a></li>
+                                        <li><a href="">Фитинги из полипропилена</a></li>
+                                        <li><a href="">Трубы из Поливинилхлорида (ПВХ)</a></li>
+                                        <li><a href="">Фитинги из Поливинилхлорида</a></li>
+                                        <li><a href="">Трубы из Металлопластика</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item__show">
+                                    <div class="menu-item__title">
+                                        Системы канализации и дренажа
+                                    </div>
+                                </div>
+                                <div class="menu-item__hidden">
+                                    <div class="menu-item__subtitle">
+                                        Системы канализации и дренажа
+                                    </div>
+                                    <ul class="menu-item__links">
+                                        <li><a href="">Обжимные фитинги для металопластиковых труб</a></li>
+                                        <li><a href="">Трубы из Сталей</a></li>
+                                        <li><a href="">Фитинги стальные приварные</a></li>
+                                        <li><a href="">Фитинги стальные резьбовые</a></li>
+                                        <li><a href="">Обжимные фитинги для стальных труб</a></li>
+                                        <li><a href="">Медные трубы</a></li>
+                                        <li><a href="">Пресс фитинги для медных труб</a></li>
+                                        <li><a href="">Обжимные фитинги для медных труб</a></li>
+                                        <li><a href="">Латунные фитинги</a></li>
+                                        <li><a href="">Трубы из Полиэтилена (ПЭ)</a></li>
+                                        <li><a href="">Фитинги из (ПЭ) — сегментные и электросварные</a></li>
+                                        <li><a href="">Трубы из Полипропилена (ПП)</a></li>
+                                        <li><a href="">Фитинги из полипропилена</a></li>
+                                        <li><a href="">Трубы из Поливинилхлорида (ПВХ)</a></li>
+                                        <li><a href="">Фитинги из Поливинилхлорида</a></li>
+                                        <li><a href="">Трубы из Металлопластика</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item__show">
+                                    <div class="menu-item__title">
+                                        Отопительные приборы и обвязка
+                                    </div>
+                                </div>
+                                <div class="menu-item__hidden">
+                                    <div class="menu-item__subtitle">
+                                        Отопительные приборы и обвязка
+                                    </div>
+                                    <ul class="menu-item__links">
+                                        <li><a href="">Обжимные фитинги для металопластиковых труб</a></li>
+                                        <li><a href="">Трубы из Сталей</a></li>
+                                        <li><a href="">Фитинги стальные приварные</a></li>
+                                        <li><a href="">Фитинги стальные резьбовые</a></li>
+                                        <li><a href="">Обжимные фитинги для стальных труб</a></li>
+                                        <li><a href="">Медные трубы</a></li>
+                                        <li><a href="">Пресс фитинги для медных труб</a></li>
+                                        <li><a href="">Обжимные фитинги для медных труб</a></li>
+                                        <li><a href="">Латунные фитинги</a></li>
+                                        <li><a href="">Трубы из Полиэтилена (ПЭ)</a></li>
+                                        <li><a href="">Фитинги из (ПЭ) — сегментные и электросварные</a></li>
+                                        <li><a href="">Трубы из Полипропилена (ПП)</a></li>
+                                        <li><a href="">Фитинги из полипропилена</a></li>
+                                        <li><a href="">Трубы из Поливинилхлорида (ПВХ)</a></li>
+                                        <li><a href="">Фитинги из Поливинилхлорида</a></li>
+                                        <li><a href="">Трубы из Металлопластика</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item__show">
+                                    <div class="menu-item__title">
+                                        Расширительные мембранные и пластиковые баки
+                                    </div>
+                                </div>
+                                <div class="menu-item__hidden">
+                                    <div class="menu-item__subtitle">
+                                        Расширительные мембранные и пластиковые баки
+                                    </div>
+                                    <ul class="menu-item__links">
+                                        <li><a href="">Обжимные фитинги для металопластиковых труб</a></li>
+                                        <li><a href="">Трубы из Сталей</a></li>
+                                        <li><a href="">Фитинги стальные приварные</a></li>
+                                        <li><a href="">Фитинги стальные резьбовые</a></li>
+                                        <li><a href="">Обжимные фитинги для стальных труб</a></li>
+                                        <li><a href="">Медные трубы</a></li>
+                                        <li><a href="">Пресс фитинги для медных труб</a></li>
+                                        <li><a href="">Обжимные фитинги для медных труб</a></li>
+                                        <li><a href="">Латунные фитинги</a></li>
+                                        <li><a href="">Трубы из Полиэтилена (ПЭ)</a></li>
+                                        <li><a href="">Фитинги из (ПЭ) — сегментные и электросварные</a></li>
+                                        <li><a href="">Трубы из Полипропилена (ПП)</a></li>
+                                        <li><a href="">Фитинги из полипропилена</a></li>
+                                        <li><a href="">Трубы из Поливинилхлорида (ПВХ)</a></li>
+                                        <li><a href="">Фитинги из Поливинилхлорида</a></li>
+                                        <li><a href="">Трубы из Металлопластика</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item__show">
+                                    <div class="menu-item__title">
+                                        КИП и автоматика
+                                    </div>
+                                </div>
+                                <div class="menu-item__hidden">
+                                    <div class="menu-item__subtitle">
+                                        КИП и автоматика
+                                    </div>
+                                    <ul class="menu-item__links">
+                                        <li><a href="">Обжимные фитинги для металопластиковых труб</a></li>
+                                        <li><a href="">Трубы из Сталей</a></li>
+                                        <li><a href="">Фитинги стальные приварные</a></li>
+                                        <li><a href="">Фитинги стальные резьбовые</a></li>
+                                        <li><a href="">Обжимные фитинги для стальных труб</a></li>
+                                        <li><a href="">Медные трубы</a></li>
+                                        <li><a href="">Пресс фитинги для медных труб</a></li>
+                                        <li><a href="">Обжимные фитинги для медных труб</a></li>
+                                        <li><a href="">Латунные фитинги</a></li>
+                                        <li><a href="">Трубы из Полиэтилена (ПЭ)</a></li>
+                                        <li><a href="">Фитинги из (ПЭ) — сегментные и электросварные</a></li>
+                                        <li><a href="">Трубы из Полипропилена (ПП)</a></li>
+                                        <li><a href="">Фитинги из полипропилена</a></li>
+                                        <li><a href="">Трубы из Поливинилхлорида (ПВХ)</a></li>
+                                        <li><a href="">Фитинги из Поливинилхлорида</a></li>
+                                        <li><a href="">Трубы из Металлопластика</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item__show">
+                                    <div class="menu-item__title">
+                                        Теплоавтоматика и регулирующая арматура
+                                    </div>
+                                </div>
+                                <div class="menu-item__hidden">
+                                    <div class="menu-item__subtitle">
+                                        Теплоавтоматика и регулирующая арматура
+                                    </div>
+                                    <ul class="menu-item__links">
+                                        <li><a href="">Обжимные фитинги для металопластиковых труб</a></li>
+                                        <li><a href="">Трубы из Сталей</a></li>
+                                        <li><a href="">Фитинги стальные приварные</a></li>
+                                        <li><a href="">Фитинги стальные резьбовые</a></li>
+                                        <li><a href="">Обжимные фитинги для стальных труб</a></li>
+                                        <li><a href="">Медные трубы</a></li>
+                                        <li><a href="">Пресс фитинги для медных труб</a></li>
+                                        <li><a href="">Обжимные фитинги для медных труб</a></li>
+                                        <li><a href="">Латунные фитинги</a></li>
+                                        <li><a href="">Трубы из Полиэтилена (ПЭ)</a></li>
+                                        <li><a href="">Фитинги из (ПЭ) — сегментные и электросварные</a></li>
+                                        <li><a href="">Трубы из Полипропилена (ПП)</a></li>
+                                        <li><a href="">Фитинги из полипропилена</a></li>
+                                        <li><a href="">Трубы из Поливинилхлорида (ПВХ)</a></li>
+                                        <li><a href="">Фитинги из Поливинилхлорида</a></li>
+                                        <li><a href="">Трубы из Металлопластика</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item__show">
+                                    <div class="menu-item__title">
+                                        Насосное оборудование
+                                    </div>
+                                </div>
+                                <div class="menu-item__hidden">
+                                    <div class="menu-item__subtitle">
+                                        Насосное оборудование
+                                    </div>
+                                    <ul class="menu-item__links">
+                                        <li><a href="">Обжимные фитинги для металопластиковых труб</a></li>
+                                        <li><a href="">Трубы из Сталей</a></li>
+                                        <li><a href="">Фитинги стальные приварные</a></li>
+                                        <li><a href="">Фитинги стальные резьбовые</a></li>
+                                        <li><a href="">Обжимные фитинги для стальных труб</a></li>
+                                        <li><a href="">Медные трубы</a></li>
+                                        <li><a href="">Пресс фитинги для медных труб</a></li>
+                                        <li><a href="">Обжимные фитинги для медных труб</a></li>
+                                        <li><a href="">Латунные фитинги</a></li>
+                                        <li><a href="">Трубы из Полиэтилена (ПЭ)</a></li>
+                                        <li><a href="">Фитинги из (ПЭ) — сегментные и электросварные</a></li>
+                                        <li><a href="">Трубы из Полипропилена (ПП)</a></li>
+                                        <li><a href="">Фитинги из полипропилена</a></li>
+                                        <li><a href="">Трубы из Поливинилхлорида (ПВХ)</a></li>
+                                        <li><a href="">Фитинги из Поливинилхлорида</a></li>
+                                        <li><a href="">Трубы из Металлопластика</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item__show">
+                                    <div class="menu-item__title">
+                                        Котельное оборудование
+                                    </div>
+                                </div>
+                                <div class="menu-item__hidden">
+                                    <div class="menu-item__subtitle">
+                                        Котельное оборудование
+                                    </div>
+                                    <ul class="menu-item__links">
+                                        <li><a href="">Обжимные фитинги для металопластиковых труб</a></li>
+                                        <li><a href="">Трубы из Сталей</a></li>
+                                        <li><a href="">Фитинги стальные приварные</a></li>
+                                        <li><a href="">Фитинги стальные резьбовые</a></li>
+                                        <li><a href="">Обжимные фитинги для стальных труб</a></li>
+                                        <li><a href="">Медные трубы</a></li>
+                                        <li><a href="">Пресс фитинги для медных труб</a></li>
+                                        <li><a href="">Обжимные фитинги для медных труб</a></li>
+                                        <li><a href="">Латунные фитинги</a></li>
+                                        <li><a href="">Трубы из Полиэтилена (ПЭ)</a></li>
+                                        <li><a href="">Фитинги из (ПЭ) — сегментные и электросварные</a></li>
+                                        <li><a href="">Трубы из Полипропилена (ПП)</a></li>
+                                        <li><a href="">Фитинги из полипропилена</a></li>
+                                        <li><a href="">Трубы из Поливинилхлорида (ПВХ)</a></li>
+                                        <li><a href="">Фитинги из Поливинилхлорида</a></li>
+                                        <li><a href="">Трубы из Металлопластика</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item__show">
+                                    <div class="menu-item__title">
+                                        Газовые системы и арматура
+                                    </div>
+                                </div>
+                                <div class="menu-item__hidden">
+                                    <div class="menu-item__subtitle">
+                                        Газовые системы и арматура
+                                    </div>
+                                    <ul class="menu-item__links">
+                                        <li><a href="">Обжимные фитинги для металопластиковых труб</a></li>
+                                        <li><a href="">Трубы из Сталей</a></li>
+                                        <li><a href="">Фитинги стальные приварные</a></li>
+                                        <li><a href="">Фитинги стальные резьбовые</a></li>
+                                        <li><a href="">Обжимные фитинги для стальных труб</a></li>
+                                        <li><a href="">Медные трубы</a></li>
+                                        <li><a href="">Пресс фитинги для медных труб</a></li>
+                                        <li><a href="">Обжимные фитинги для медных труб</a></li>
+                                        <li><a href="">Латунные фитинги</a></li>
+                                        <li><a href="">Трубы из Полиэтилена (ПЭ)</a></li>
+                                        <li><a href="">Фитинги из (ПЭ) — сегментные и электросварные</a></li>
+                                        <li><a href="">Трубы из Полипропилена (ПП)</a></li>
+                                        <li><a href="">Фитинги из полипропилена</a></li>
+                                        <li><a href="">Трубы из Поливинилхлорида (ПВХ)</a></li>
+                                        <li><a href="">Фитинги из Поливинилхлорида</a></li>
+                                        <li><a href="">Трубы из Металлопластика</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item__show">
+                                    <div class="menu-item__title">
+                                        Санфаянс и смесители
+                                    </div>
+                                </div>
+                                <div class="menu-item__hidden">
+                                    <div class="menu-item__subtitle">
+                                        Санфаянс и смесители
+                                    </div>
+                                    <ul class="menu-item__links">
+                                        <li><a href="">Обжимные фитинги для металопластиковых труб</a></li>
+                                        <li><a href="">Трубы из Сталей</a></li>
+                                        <li><a href="">Фитинги стальные приварные</a></li>
+                                        <li><a href="">Фитинги стальные резьбовые</a></li>
+                                        <li><a href="">Обжимные фитинги для стальных труб</a></li>
+                                        <li><a href="">Медные трубы</a></li>
+                                        <li><a href="">Пресс фитинги для медных труб</a></li>
+                                        <li><a href="">Обжимные фитинги для медных труб</a></li>
+                                        <li><a href="">Латунные фитинги</a></li>
+                                        <li><a href="">Трубы из Полиэтилена (ПЭ)</a></li>
+                                        <li><a href="">Фитинги из (ПЭ) — сегментные и электросварные</a></li>
+                                        <li><a href="">Трубы из Полипропилена (ПП)</a></li>
+                                        <li><a href="">Фитинги из полипропилена</a></li>
+                                        <li><a href="">Трубы из Поливинилхлорида (ПВХ)</a></li>
+                                        <li><a href="">Фитинги из Поливинилхлорида</a></li>
+                                        <li><a href="">Трубы из Металлопластика</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal search-modal" id="searchModal">
+                <div class="modal__bg modal-bg _close-modal"></div>
+                <div class="modal__dialog">
+                    <div class="h5">
+                        Поиск по сайту
+                    </div>
+                    <form class="modal-form">
+                        <div class="fg">
+                            <input type="text">
+                        </div>
+                        <button class="search-modal__btn m-btn m-btn-big m-btn-gray-outline">
+                            <span>Найти</span>
+                        </button>
+                    </form>
+
+                    <button class="close-btn _close-modal">
+                        <img src="img/close2.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <div class="profile m-section _first _tabs-parent">
+                <div class="container">
+                    <div class="breadcrumbs anim-newSing anim-newSing--transform">
+                        <ul>
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Корзина</a></li>
+                            <li><span>Личный кабинет</span></li>
+                        </ul>
+                    </div>
+                    <h1 class="h2 anim-newSing anim-newSing--transform">
+                        Личный кабинет
+                    </h1>
+
+                    <div class="profile__tabs anim-newSing anim-newSing--transform">
+                        <div class="profile__tab _tab _active" data-tab="_tab1">
+                            <span class="text16">Данные пользователя</span>
+                        </div>
+                        <div class="profile__tab _tab" data-tab="_tab2">
+                            <span class="text16">Мои заказы</span>
+                        </div>
+                    </div>
+
+                    <div class="tab-content _tab1 _active anim-newSing anim-newSing--transform">
+                        <div class="order-buyer order-buyer--mt56">
+                            <div class="h5">
+                                Покупатель
+                            </div>
+
+
+                            <div class="order-buyer__grid">
+                                <div class="fg">
+                                    <label>ИНН</label>
+                                    <input type="text">
+                                </div>
+                                <div class="m-check _col2">
+                                    <input type="checkbox">
+                                    <label><span>юр.лицо работает без НДС</span></label>
+                                </div>
+                                <div class="fg">
+                                    <label>Форма</label>
+                                    <input type="text">
+                                </div>
+                                <div class="fg _col2">
+                                    <label>Название</label>
+                                    <input type="text">
+                                </div>
+                                <div class="fg">
+                                    <label>Название</label>
+                                    <input type="text">
+                                </div>
+                                <div class="fg">
+                                    <label>E-mail*</label>
+                                    <input type="text">
+                                </div>
+                                <div class="fg">
+                                    <label>Телефон*</label>
+                                    <input type="tel">
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="order-buyer order-buyer--mt56">
+                            <div class="h5">
+                                Адрес доставки
+                            </div>
+                            <div class="order-buyer__grid">
+                                <div class="fg">
+                                    <label>Город доставки</label>
+                                    <select>
+                                        <option>Санкт-Петербург</option>
+                                        <option>Москва</option>
+                                        <option>Казань</option>
+                                    </select>
+                                </div>
+                                <div class="fg _col2">
+                                    <label>Улица*</label>
+                                    <input type="text">
+                                </div>
+                                <div class="fg">
+                                    <label>Дом / Корпус*</label>
+                                    <input type="text">
+                                </div>
+                                <div class="fg">
+                                    <label>Квартира / Офис*</label>
+                                    <input type="text">
+                                </div>
+                                <div class="fg">
+                                    <label>Подъезд</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-buyer order-buyer--mt56">
+                            <div class="h5">
+                                Контактные данные
+                            </div>
+                            <div class="order-buyer__grid order-buyer__grid--col2">
+                                <div class="fg">
+                                    <label>E-mail*</label>
+                                    <input type="text">
+                                </div>
+                                <div class="fg">
+                                    <label>Телефон*</label>
+                                    <input type="tel">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-buyer order-buyer--mt56">
+                            <div class="h5">
+                                Пароль для входа
+                            </div>
+                            <div class="order-buyer__grid">
+                                <div class="fg">
+                                    <button class="pass-toggle" type="button"></button>
+                                    <label>Текущий пароль*</label>
+                                    <input type="password">
+                                </div>
+                                <div class="fg">
+                                    <button class="pass-toggle" type="button"></button>
+                                    <label>Новый пароль*</label>
+                                    <input type="password">
+                                </div>
+                                <div class="fg">
+                                    <button class="pass-toggle" type="button"></button>
+                                    <label>Повторите новый пароль*</label>
+                                    <input type="password">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-delivery">
+                            <div class="h5">
+                                Настройки и уведомления
+                            </div>
+                            <div class="order-delivery__info">
+                                <div class="order-delivery__subtitle">
+                                    Уведомления по заказам
+                                </div>
+                                <div class="order-delivery__desc text16">
+                                    Получайте уведомления о оформлении и статусе доставки заказа. Отправим СМС если не получится по выбранному способу получения.
+                                </div>
+                            </div>
+                            <div class="order-delivery__grid order-delivery__grid--col3">
+                                <div class="order-radio">
+                                    <input checked type="radio" name="notificationType">
+                                    <div class="order-radio__top _flex-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M10.3078 13.6923L15.1539 8.84619M20.1113 5.88867L16.0207 19.1833C15.6541 20.3747 15.4706 20.9707 15.1544 21.1683C14.8802 21.3396 14.5406 21.3683 14.2419 21.2443C13.8975 21.1014 13.618 20.5433 13.0603 19.428L10.4694 14.2461C10.3809 14.0691 10.3366 13.981 10.2775 13.9043C10.225 13.8363 10.1645 13.7749 10.0965 13.7225C10.0215 13.6647 9.93486 13.6214 9.76577 13.5369L4.57192 10.9399C3.45662 10.3823 2.89892 10.1032 2.75601 9.75879C2.63207 9.4601 2.66033 9.12023 2.83169 8.84597C3.02928 8.52974 3.62523 8.34603 4.81704 7.97932L18.1116 3.88867C19.0486 3.60038 19.5173 3.45635 19.8337 3.57253C20.1094 3.67373 20.3267 3.89084 20.4279 4.16651C20.544 4.48283 20.3999 4.95126 20.1119 5.88729L20.1113 5.88867Z" stroke="#92AAB7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <div class="order-radio__check"></div>
+                                    </div>
+                                    <div class="order-radio__text">
+                                        <div class="order-radio__title h6">
+                                            SMS-уведомленния
+                                        </div>
+                                        <div class="order-radio__desc text16">
+                                            Отправим на привязанный номер
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-radio">
+                                    <input type="radio" name="notificationType">
+                                    <div class="order-radio__top _flex-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M4 6L10.1076 10.6123L10.1097 10.614C10.7878 11.1113 11.1271 11.3601 11.4988 11.4562C11.8272 11.5412 12.1725 11.5412 12.501 11.4562C12.8729 11.36 13.2132 11.1105 13.8926 10.6123C13.8926 10.6123 17.8101 7.60594 20 6M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8036C21 16.9215 21 17.4805 20.7822 17.9079C20.5905 18.2842 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2842 3.21799 17.9079C3 17.4801 3 16.9203 3 15.8002Z" stroke="#92AAB7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <div class="order-radio__check"></div>
+                                    </div>
+                                    <div class="order-radio__text">
+                                        <div class="order-radio__title h6">
+                                            Уведомление на email
+                                        </div>
+                                        <div class="order-radio__desc text16">
+                                            Отравим на почту регистрации
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-nav">
+                            <button class="order-nav__btn m-btn m-btn-big m-btn-orange">
+                                <span>Сохранить</span>
+                                <img src="img/save.svg" alt="">
+                            </button>
+                            <button class="order-nav__btn m-btn m-btn-big m-btn-gray-outline">
+                                <span>Отмена</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="tab-content _tab2">
+                        <div class="order-buyer order-buyer--mt56">
+                            <div class="h5">
+                                Выполненные заказы
+                            </div>
+                            <div class="cart-table order-table2 m-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="text14">Номер заказа</div>
+                                            </th>
+                                            <th>
+                                                <div class="text14">
+                                                    Дата
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="text14">
+                                                    Состав заказа
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="text14">
+                                                    Стоимость, ₽
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="cart-row">
+                                            <td>
+                                                <div class="m-table__title">
+                                                    <span class="text12">
+                Номер заказа
+            </span>
+                                                </div>
+                                                <div class="m-table__desc">
+                                                    <div class="cart-table__name">
+                                                        <div class="text14 l-sp1 flaming-text medium-text">
+                                                            130723-8
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="m-table__title">
+                                                    <span class="text12">
+                Дата
+            </span>
+                                                </div>
+                                                <div class="m-table__desc">
+                                                    <div class="text14 l-sp1">
+                                                        20.11.2025
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="m-table__title">
+                                                    <span class="text12">
+                Состав заказа
+            </span>
+                                                </div>
+                                                <div class="m-table__desc">
+                                                    <div class="order-items">
+                                                        <div class="order-item">
+                                                            <div class="text14 l-sp1 gray-text">LSa.34.22.092401</div>
+                                                            <div class="text14 l-sp1">Фитинг стальной приварной</div>
+                                                            <div class="text14 l-sp1 trinidad-text">1", 3 x 1/2 </div>
+                                                        </div>
+
+                                                        <div class="order-item">
+                                                            <div class="text14 l-sp1 gray-text">LMa.34.24.06014</div>
+                                                            <div class="text14 l-sp1">Фитинги из Поливинилхлорида</div>
+                                                            <div class="text14 l-sp1 trinidad-text">1", 3 x 1/2 </div>
+                                                        </div>
+                                                        <div class="order-item">
+                                                            <div class="text14 l-sp1 gray-text">VTc.510.SS.060406</div>
+                                                            <div class="text14 l-sp1">Коллектор из нержавеющей стали с межосевым расстоянием выходов 100 мм</div>
+                                                            <div class="text14 l-sp1 trinidad-text">1", 3 x 1/2 </div>
+                                                        </div>
+                                                        <div class="text14 flaming-text">
+                                                            + 5 товаров
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="m-table__title">
+                                                    <span class="text12">
+                Стоимость, ₽
+            </span>
+                                                </div>
+                                                <div class="m-table__desc">
+                                                    <div class="cart-row__price ">
+                                                        12 700,0
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="cart-row">
+                                            <td>
+                                                <div class="m-table__title">
+                                                    <span class="text12">
+                Номер заказа
+            </span>
+                                                </div>
+                                                <div class="m-table__desc">
+                                                    <div class="cart-table__name">
+                                                        <div class="text14 l-sp1 flaming-text medium-text">
+                                                            130723-8
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="m-table__title">
+                                                    <span class="text12">
+                Дата
+            </span>
+                                                </div>
+                                                <div class="m-table__desc">
+                                                    <div class="text14 l-sp1">
+                                                        20.11.2025
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="m-table__title">
+                                                    <span class="text12">
+                Состав заказа
+            </span>
+                                                </div>
+                                                <div class="m-table__desc">
+                                                    <div class="order-items">
+                                                        <div class="order-item">
+                                                            <div class="text14 l-sp1 gray-text">LSa.34.22.092401</div>
+                                                            <div class="text14 l-sp1">Фитинг стальной приварной</div>
+                                                            <div class="text14 l-sp1 trinidad-text">1", 3 x 1/2 </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="m-table__title">
+                                                    <span class="text12">
+                Стоимость, ₽
+            </span>
+                                                </div>
+                                                <div class="m-table__desc">
+                                                    <div class="cart-row__price ">
+                                                        12 700,0
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-nav footer-nav--big">
+                        <div class="h6 h5-tablet">
+                            Каталог товаров
+                        </div>
+                        <ul class="footer-nav__links">
+                            <li><a href="">Трубы и фитинги</a></li>
+                            <li><a href="">Теплоизоляция</a></li>
+                            <li>
+                                <a href="">
+                                    Трубопроводная арматура
+                                    <div class="m-badge"><span class="text12">New</span></div>
+                                </a>
+                            </li>
+                            <li><a href="">Системы канализации и дренажа</a></li>
+                            <li><a href="">Отопительные приборы и обвязка</a></li>
+                            <li><a href="">Расширительные мембранные и пластиковые баки</a></li>
+                            <li><a href="">КИП и автоматика</a></li>
+                            <li><a href="">Теплоавтоматика и регулирующая арматура</a></li>
+                            <li><a href="">Насосное оборудование</a></li>
+                            <li><a href="">Котельное оборудование</a></li>
+                            <li><a href="">Газовые системы и арматура</a></li>
+                            <li><a href="">Изделия из нержавеющей и углетродистой стали</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav">
+                        <div class="h6 h5-tablet">
+                            Услуги
+                        </div>
+                        <ul class="footer-nav__links">
+                            <li><a href="">Монтаж систем водоснабжения</a></li>
+                            <li><a href="">Монтаж систем канализации</a></li>
+                            <li><a href="">Установка насосного оборудования</a></li>
+                            <li><a href="">Монтаж систем отоплаения</a></li>
+                            <li><a href="">Монтаж теплого пола</a></li>
+                            <li><a href="">Монтаж систем пожаротушения</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav">
+                        <div class="h6 h5-tablet">
+                            Информация
+                        </div>
+                        <ul class="footer-nav__links">
+                            <li><a href="">О компании</a></li>
+                            <li><a href="">Решения</a></li>
+                            <li><a href="">Доставка</a></li>
+                            <li><a href="">Оплата</a></li>
+                            <li><a href="">Заказ</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-middle">
+                    <a href="" class="footer__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom__c text16">© ООО «РайтБиз», 2025</div>
+                    <a href="" class="footer-bottom__link text16">Правовая информация</a>
+                    <a href="" class="footer-bottom__link2 text16">Пользовательское соглашение</a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
