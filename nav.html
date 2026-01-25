@@ -33,6 +33,27 @@
 <body class="m-page">
 
     <div class="wrapper" style="padding: 50px;">
+        <button data-modal="loginModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Войти
+        </button>
+        <a href="reg.html" style="display: block; margin-bottom: 20px;">
+            Регистрация
+        </a>
+        <a href="services.html" style="display: block; margin-bottom: 20px;">
+            Услуги
+        </a>
+        <a href="portfolio.html" style="display: block; margin-bottom: 20px;">
+            Портфолио
+        </a>
+        <a href="news.html" style="display: block; margin-bottom: 20px;">
+            Новости
+        </a>
+        <a href="news-item.html" style="display: block; margin-bottom: 20px;">
+            Статья
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             Главная
         </a>
@@ -168,6 +189,43 @@
         </div>
     </div>
 
+    <div class="modal login-modal" id="loginModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="h5 h5-tablet">
+                Войти
+            </div>
+
+            <form action="" class="modal-form">
+                <div class="modal-form__grid">
+                    <div class="fg">
+                        <label>Логин</label>
+                        <input type="text">
+                    </div>
+                    <div class="fg">
+                        <label>Пароль</label>
+                        <input type="text">
+                        <div class="fg__hint">
+                            <a href="" class="text14 dark-blue-text l-sp1">
+                                Забыли пароль?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-big m-btn-orange">
+                    <span>Войти</span>
+                    <img src="img/next3.svg" alt="">
+                </button>
+                <div class="modal-form__hint">
+                    <a href="" class="trinidad-text">Зарегистрируйтесь</a>, если у вас еще нет профиля на нашем сайте
+                </div>
+            </form>
+
+            <button class="close-btn _close-modal">
+                <img src="img/close2.png" alt="">
+            </button>
+        </div>
+    </div>
 
 
     <!--  -->
